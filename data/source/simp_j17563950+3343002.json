@@ -1,0 +1,203 @@
+{
+    "Sources": [
+        {
+            "source": "SIMP J17563950+3343002",
+            "ra_deg": 269.1646,
+            "dec_deg": 33.7167,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "Robe16",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 61.0,
+            "error": 4.0,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_W2_formula",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 2.5,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: Field; age range (Gyr): 2.5(+4.3/-2)",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "SIMP J17563950+3343002"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "2MASS/2MASS.H",
+            "magnitude": 15.641,
+            "magnitude_error": 0.137,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cutr03",
+            "regime": "nir"
+        },
+        {
+            "band": "2MASS/2MASS.J",
+            "magnitude": 16.481,
+            "magnitude_error": 0.127,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cutr03",
+            "regime": "nir"
+        },
+        {
+            "band": "2MASS/2MASS.Ks",
+            "magnitude": 14.745,
+            "magnitude_error": 0.088,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cutr03",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.J",
+            "magnitude": 16.294,
+            "magnitude_error": 0.013,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Schn23b",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.K",
+            "magnitude": 14.787,
+            "magnitude_error": 0.012,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Schn23b",
+            "regime": "nir"
+        },
+        {
+            "band": "WISE/WISE.W1",
+            "magnitude": 14.498,
+            "magnitude_error": 0.014,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Maro21",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W2",
+            "magnitude": 14.274,
+            "magnitude_error": 0.014,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Maro21",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W3",
+            "magnitude": 12.098,
+            "magnitude_error": null,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": "upper limit",
+            "reference": "Cutr13",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W4",
+            "magnitude": 8.916,
+            "magnitude_error": null,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": "upper limit",
+            "reference": "Cutr13",
+            "regime": "infrared"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 269.164623,
+            "dec_deg": 33.716728,
+            "epoch_year": 1998.2874743326488,
+            "reference": "Cutr03"
+        },
+        {
+            "ra_deg": 269.164584,
+            "dec_deg": 33.7170782,
+            "epoch_year": 2015.405,
+            "reference": "Maro21"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -10.7,
+            "pm_ra_error": 7.7,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 81.5,
+            "pm_dec_error": 7.7,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Maro21"
+        },
+        {
+            "pm_ra": -6.2,
+            "pm_ra_error": 11.5,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 65.5,
+            "pm_dec_error": 13.0,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Robe16"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "L2",
+            "comments": "NIR spectral type",
+            "adopted": null,
+            "reference": "Robe16"
+        }
+    ]
+}

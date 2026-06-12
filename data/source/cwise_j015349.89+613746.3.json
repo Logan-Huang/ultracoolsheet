@@ -1,0 +1,169 @@
+{
+    "Sources": [
+        {
+            "source": "CWISE J015349.89+613746.3",
+            "ra_deg": 28.4563,
+            "dec_deg": 61.63,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "Kirk21",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "Associations": [
+        {
+            "association": "COL",
+            "membership_probability": 0.93,
+            "comments": "BANYAN Sigma inputs: pm+phot-plx",
+            "adopted": null,
+            "reference": "UCS_24"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 21.0,
+            "error": 6.0,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_W2_formula_young",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 0.042,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: COL?; age range (Gyr): 0.042(+0.006/-0.004)?",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "CWISE J015349.89+613746.3"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "2MASS/2MASS.Ks",
+            "magnitude": 15.574,
+            "magnitude_error": 0.188,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Skru06",
+            "regime": "nir"
+        },
+        {
+            "band": "PAN-STARRS/PS1.y",
+            "magnitude": 20.3349,
+            "magnitude_error": 0.0134,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "PS1",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cham16",
+            "regime": "optical"
+        },
+        {
+            "band": "WISE/WISE.W1",
+            "magnitude": 13.947,
+            "magnitude_error": 0.026,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Maro21",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W2",
+            "magnitude": 13.237,
+            "magnitude_error": 0.019,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Maro21",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W3",
+            "magnitude": 11.511,
+            "magnitude_error": 0.229,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cutr13",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W4",
+            "magnitude": 9.207,
+            "magnitude_error": null,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": "upper limit",
+            "reference": "Cutr13",
+            "regime": "infrared"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 28.457785,
+            "dec_deg": 61.62963,
+            "epoch_year": 2000.0,
+            "reference": "Cutr12"
+        },
+        {
+            "ra_deg": 28.4578,
+            "dec_deg": 61.6296,
+            "epoch_year": 2012.7692539356606,
+            "reference": "Magn20"
+        },
+        {
+            "ra_deg": 28.4579139,
+            "dec_deg": 61.6295331,
+            "epoch_year": 2015.405,
+            "reference": "Maro21"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 174.9,
+            "pm_ra_error": 6.8,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -107.7,
+            "pm_dec_error": 6.2,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Maro21"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "T0",
+            "comments": "NIR spectral type",
+            "adopted": null,
+            "reference": "Kirk21"
+        }
+    ]
+}

@@ -1,0 +1,475 @@
+{
+    "Sources": [
+        {
+            "source": "Kelu-1",
+            "ra_deg": 196.4174,
+            "dec_deg": -25.6849,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "Ruiz97",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 20.41,
+            "error": 0.29,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_plx_formula",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 2.98,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: FLD-G; age range (Gyr): 2.98(+4.07/-2.08)",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "Kelu-1"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 49.0459,
+            "parallax_error": 0.7248,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Gaia21a"
+        },
+        {
+            "parallax_mas": 49.0459,
+            "parallax_error": 0.7248,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Gaia23"
+        },
+        {
+            "parallax_mas": 51.75,
+            "parallax_error": 1.16,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Wein16"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "2MASS/2MASS.H",
+            "magnitude": 12.392,
+            "magnitude_error": 0.023,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cutr03",
+            "regime": "nir"
+        },
+        {
+            "band": "2MASS/2MASS.J",
+            "magnitude": 13.414,
+            "magnitude_error": 0.026,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cutr03",
+            "regime": "nir"
+        },
+        {
+            "band": "2MASS/2MASS.Ks",
+            "magnitude": 11.747,
+            "magnitude_error": 0.023,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cutr03",
+            "regime": "nir"
+        },
+        {
+            "band": "GAIA/GAIA3.G",
+            "magnitude": 18.7678,
+            "magnitude_error": 0.0057,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "Gaia",
+            "epoch": null,
+            "comments": null,
+            "reference": "Gaia23",
+            "regime": "optical"
+        },
+        {
+            "band": "GAIA/GAIA3.Gbp",
+            "magnitude": 21.1576,
+            "magnitude_error": 0.2004,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "Gaia",
+            "epoch": null,
+            "comments": null,
+            "reference": "Gaia23",
+            "regime": "optical"
+        },
+        {
+            "band": "GAIA/GAIA3.Grp",
+            "magnitude": 16.7932,
+            "magnitude_error": 0.0085,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "Gaia",
+            "epoch": null,
+            "comments": null,
+            "reference": "Gaia23",
+            "regime": "optical"
+        },
+        {
+            "band": "MKO/NSFCam.H",
+            "magnitude": 12.45,
+            "magnitude_error": 0.05,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Legg10a",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.J",
+            "magnitude": 13.23,
+            "magnitude_error": 0.05,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Legg10a",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.K",
+            "magnitude": 11.78,
+            "magnitude_error": 0.05,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Legg10a",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.Lp",
+            "magnitude": 10.78,
+            "magnitude_error": 0.15,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Goli04a",
+            "regime": "infrared"
+        },
+        {
+            "band": "MKO/NSFCam.Mp",
+            "magnitude": 11.22,
+            "magnitude_error": 0.1,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Goli04a",
+            "regime": "infrared"
+        },
+        {
+            "band": "PAN-STARRS/PS1.i",
+            "magnitude": 17.9789,
+            "magnitude_error": 0.0142,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "PS1",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cham16",
+            "regime": "optical"
+        },
+        {
+            "band": "PAN-STARRS/PS1.r",
+            "magnitude": 20.2198,
+            "magnitude_error": 0.047,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "PS1",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cham16",
+            "regime": "optical"
+        },
+        {
+            "band": "PAN-STARRS/PS1.y",
+            "magnitude": 15.5257,
+            "magnitude_error": 0.0062,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "PS1",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cham16",
+            "regime": "optical"
+        },
+        {
+            "band": "PAN-STARRS/PS1.z",
+            "magnitude": 16.5215,
+            "magnitude_error": 0.0042,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "PS1",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cham16",
+            "regime": "optical"
+        },
+        {
+            "band": "Spitzer/IRAC.I1",
+            "magnitude": 10.92,
+            "magnitude_error": 0.05,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "Spitzer",
+            "epoch": null,
+            "comments": null,
+            "reference": "Patt06",
+            "regime": "infrared"
+        },
+        {
+            "band": "Spitzer/IRAC.I2",
+            "magnitude": 10.9,
+            "magnitude_error": 0.04,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "Spitzer",
+            "epoch": null,
+            "comments": null,
+            "reference": "Patt06",
+            "regime": "infrared"
+        },
+        {
+            "band": "UKIRT/WFCAM.Y",
+            "magnitude": 14.52,
+            "magnitude_error": 0.03,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Legg10a",
+            "regime": "nir"
+        },
+        {
+            "band": "WISE/WISE.W1",
+            "magnitude": 11.202,
+            "magnitude_error": 0.011,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Maro21",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W2",
+            "magnitude": 10.931,
+            "magnitude_error": 0.008,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Maro21",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W3",
+            "magnitude": 10.418,
+            "magnitude_error": 0.064,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cutr13",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W4",
+            "magnitude": 9.24,
+            "magnitude_error": null,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": "upper limit",
+            "reference": "Cutr13",
+            "regime": "infrared"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 196.417482,
+            "dec_deg": -25.684996,
+            "epoch_year": 1998.4079397672826,
+            "reference": "Cutr03"
+        },
+        {
+            "ra_deg": 196.417351,
+            "dec_deg": -25.68492,
+            "epoch_year": 2000.0,
+            "reference": "Gaia21a"
+        },
+        {
+            "ra_deg": 196.4158478,
+            "dec_deg": -25.6850414,
+            "epoch_year": 2016.0,
+            "reference": "Gaia23"
+        },
+        {
+            "ra_deg": 196.4162,
+            "dec_deg": -25.6851,
+            "epoch_year": 2011.4922929500342,
+            "reference": "Magn20"
+        },
+        {
+            "ra_deg": 196.4158809,
+            "dec_deg": -25.6850581,
+            "epoch_year": 2015.405,
+            "reference": "Maro21"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -301.8,
+            "pm_ra_error": 2.1,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -7.6,
+            "pm_dec_error": 2.2,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Best18"
+        },
+        {
+            "pm_ra": -305.371,
+            "pm_ra_error": 1.008,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -27.326,
+            "pm_dec_error": 0.727,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Gaia21a"
+        },
+        {
+            "pm_ra": -305.371,
+            "pm_ra_error": 1.008,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -27.326,
+            "pm_dec_error": 0.727,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Gaia23"
+        },
+        {
+            "pm_ra": -292.46,
+            "pm_ra_error": 4.1,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -1.81,
+            "pm_dec_error": 3.27,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Magn20"
+        },
+        {
+            "pm_ra": -299.4,
+            "pm_ra_error": 3.6,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -3.3,
+            "pm_dec_error": 3.8,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Maro21"
+        },
+        {
+            "pm_ra": -298.89,
+            "pm_ra_error": 0.29,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -9.29,
+            "pm_dec_error": 0.36,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Wein16"
+        }
+    ],
+    "RadialVelocities": [
+        {
+            "rv_kms": 6.37,
+            "rv_error": 0.35,
+            "rv_error_upper": null,
+            "rv_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Blak10"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "L2",
+            "comments": "NIR spectral type",
+            "adopted": null,
+            "reference": "Kirk10"
+        },
+        {
+            "source_type": "L2",
+            "comments": "optical spectral type",
+            "adopted": null,
+            "reference": "Kirk99a"
+        }
+    ]
+}

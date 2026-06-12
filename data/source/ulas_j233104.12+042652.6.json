@@ -1,0 +1,148 @@
+{
+    "Sources": [
+        {
+            "source": "ULAS J233104.12+042652.6",
+            "ra_deg": 352.768,
+            "dec_deg": 4.4485,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "Burn13",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 150.0,
+            "error": 40.0,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_W2_formula",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 2.5,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: Field; age range (Gyr): 2.5(+4.3/-2)",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "ULAS J233104.12+042652.6"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "MKO/NSFCam.J",
+            "magnitude": 18.67,
+            "magnitude_error": 0.075,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Lawr12",
+            "regime": "nir"
+        },
+        {
+            "band": "PAN-STARRS/PS1.y",
+            "magnitude": 21.03,
+            "magnitude_error": 0.1318,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "PS1",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cham16",
+            "regime": "optical"
+        },
+        {
+            "band": "UKIRT/WFCAM.Y",
+            "magnitude": 20.158,
+            "magnitude_error": 0.141,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Lawr12",
+            "regime": "nir"
+        },
+        {
+            "band": "WISE/WISE.W1",
+            "magnitude": 18.154,
+            "magnitude_error": 0.154,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Maro21",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W2",
+            "magnitude": 18.372,
+            "magnitude_error": 0.537,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Maro21",
+            "regime": "infrared"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 352.767169,
+            "dec_deg": 4.447939,
+            "epoch_year": 2000.0,
+            "reference": "Lawr13"
+        },
+        {
+            "ra_deg": 352.7672,
+            "dec_deg": 4.4477,
+            "epoch_year": 2013.5061190965093,
+            "reference": "Magn20"
+        },
+        {
+            "ra_deg": 352.7668226,
+            "dec_deg": 4.4478103,
+            "epoch_year": 2015.405,
+            "reference": "Maro21"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -278.9,
+            "pm_ra_error": 195.8,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -153.1,
+            "pm_dec_error": 189.8,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Maro21"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "T4",
+            "comments": "NIR spectral type",
+            "adopted": null,
+            "reference": "Burn13"
+        }
+    ]
+}

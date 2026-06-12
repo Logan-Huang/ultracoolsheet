@@ -1,0 +1,340 @@
+{
+    "Sources": [
+        {
+            "source": "WISEPA J190624.75+450808.2",
+            "ra_deg": 286.6031,
+            "dec_deg": 45.1362,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "Kirk11",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 15.6,
+            "error": 0.4,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_plx_formula",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 2.5,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: Field; age range (Gyr): 2.5(+4.3/-2)",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "WISEPA J190624.75+450808.2"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 54.1,
+            "parallax_error": 3.0,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Best20"
+        },
+        {
+            "parallax_mas": 64.1,
+            "parallax_error": 1.6,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Kirk19"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "2MASS/2MASS.H",
+            "magnitude": 16.32,
+            "magnitude_error": 0.09,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Kirk11",
+            "regime": "nir"
+        },
+        {
+            "band": "2MASS/2MASS.J",
+            "magnitude": 16.36,
+            "magnitude_error": 0.09,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Kirk11",
+            "regime": "nir"
+        },
+        {
+            "band": "2MASS/2MASS.Ks",
+            "magnitude": 16.83,
+            "magnitude_error": 0.19,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Kirk11",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.H",
+            "magnitude": 16.37,
+            "magnitude_error": 0.081,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Best21",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.J",
+            "magnitude": 15.954,
+            "magnitude_error": 0.011,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Schn23b",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.K",
+            "magnitude": 16.401,
+            "magnitude_error": 0.055,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Best21",
+            "regime": "nir"
+        },
+        {
+            "band": "PAN-STARRS/PS1.y",
+            "magnitude": 18.7424,
+            "magnitude_error": 0.0386,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "PS1",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cham16",
+            "regime": "optical"
+        },
+        {
+            "band": "PAN-STARRS/PS1.z",
+            "magnitude": 20.5792,
+            "magnitude_error": 0.0936,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "PS1",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cham16",
+            "regime": "optical"
+        },
+        {
+            "band": "Spitzer/IRAC.I1",
+            "magnitude": 15.03,
+            "magnitude_error": 0.02,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "Spitzer",
+            "epoch": null,
+            "comments": null,
+            "reference": "Mace13a",
+            "regime": "infrared"
+        },
+        {
+            "band": "Spitzer/IRAC.I2",
+            "magnitude": 13.82,
+            "magnitude_error": 0.02,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "Spitzer",
+            "epoch": null,
+            "comments": null,
+            "reference": "Mace13a",
+            "regime": "infrared"
+        },
+        {
+            "band": "UKIRT/WFCAM.Y",
+            "magnitude": 17.031,
+            "magnitude_error": 0.051,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Best21",
+            "regime": "nir"
+        },
+        {
+            "band": "WISE/WISE.W1",
+            "magnitude": 15.9,
+            "magnitude_error": 0.02,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Maro21",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W2",
+            "magnitude": 13.835,
+            "magnitude_error": 0.011,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Maro21",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W3",
+            "magnitude": 12.876,
+            "magnitude_error": 0.469,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cutr13",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W4",
+            "magnitude": 9.543,
+            "magnitude_error": null,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": "upper limit",
+            "reference": "Cutr13",
+            "regime": "infrared"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 286.603188,
+            "dec_deg": 45.136463,
+            "epoch_year": 1998.432580424367,
+            "reference": "Cutr03"
+        },
+        {
+            "ra_deg": 286.603,
+            "dec_deg": 45.1351,
+            "epoch_year": 2012.6815331964408,
+            "reference": "Magn20"
+        },
+        {
+            "ra_deg": 286.6030301,
+            "dec_deg": 45.1348125,
+            "epoch_year": 2015.405,
+            "reference": "Maro21"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -25.4,
+            "pm_ra_error": 3.0,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -349.3,
+            "pm_dec_error": 3.0,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Best18"
+        },
+        {
+            "pm_ra": -24.7,
+            "pm_ra_error": 2.6,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -354.0,
+            "pm_dec_error": 2.8,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Best20"
+        },
+        {
+            "pm_ra": -22.8,
+            "pm_ra_error": 0.5,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -350.3,
+            "pm_dec_error": 0.1,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Kirk19"
+        },
+        {
+            "pm_ra": -19.87,
+            "pm_ra_error": 23.33,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -327.62,
+            "pm_dec_error": 23.42,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Magn20"
+        },
+        {
+            "pm_ra": -18.3,
+            "pm_ra_error": 8.4,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -338.0,
+            "pm_dec_error": 9.0,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Maro21"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "T6",
+            "comments": "NIR spectral type",
+            "adopted": null,
+            "reference": "Kirk11"
+        }
+    ]
+}

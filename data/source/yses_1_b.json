@@ -1,0 +1,178 @@
+{
+    "Sources": [
+        {
+            "source": "YSES 1 b",
+            "ra_deg": 201.3014,
+            "dec_deg": -64.9388,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "Bohn20a",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "Associations": [
+        {
+            "association": "LCC",
+            "membership_probability": 0.991,
+            "comments": "BANYAN Sigma inputs: pm+trig-plx+rv",
+            "adopted": null,
+            "reference": "UCS_24"
+        }
+    ],
+    "CompanionRelationships": [
+        {
+            "companion": "YSES 1",
+            "relationship": "host star",
+            "projected_separation_arcsec": 1.7,
+            "projected_separation_error": null,
+            "projected_separation_error_upper": null,
+            "projected_separation_error_lower": null,
+            "comments": null,
+            "reference": "UCS_24",
+            "other_companion_names": "YSES 1 / TYC 8998-760-1"
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 94.23,
+            "error": 0.11,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_plx_formula",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 0.0167,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: YSES 1 b;LCC; age range (Gyr): 0.0153-0.0181",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "YSES 1 b"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 10.6124,
+            "parallax_error": 0.0116,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "2MASS/2MASS.H",
+            "magnitude": 15.87,
+            "magnitude_error": 0.38,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Bohn20a",
+            "regime": "nir"
+        },
+        {
+            "band": "2MASS/2MASS.J",
+            "magnitude": 15.73,
+            "magnitude_error": 0.38,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Bohn20a",
+            "regime": "nir"
+        },
+        {
+            "band": "2MASS/2MASS.Ks",
+            "magnitude": 14.7,
+            "magnitude_error": 0.14,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Bohn20a",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.Lp",
+            "magnitude": 13.3,
+            "magnitude_error": 0.08,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Bohn20a",
+            "regime": "infrared"
+        },
+        {
+            "band": "MKO/NSFCam.Mp",
+            "magnitude": 13.08,
+            "magnitude_error": 0.2,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Bohn20a",
+            "regime": "infrared"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 201.30137,
+            "dec_deg": -64.93881,
+            "epoch_year": 2000.0,
+            "reference": "Bohn20a"
+        },
+        {
+            "ra_deg": 201.3000961,
+            "dec_deg": -64.9391591,
+            "epoch_year": 2016.0,
+            "reference": "Gaia23"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -40.996,
+            "pm_ra_error": 0.01,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -17.734,
+            "pm_dec_error": 0.013,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        }
+    ],
+    "RadialVelocities": [
+        {
+            "rv_kms": 12.84,
+            "rv_error": 1.43,
+            "rv_error_upper": null,
+            "rv_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Gaia18"
+        }
+    ]
+}

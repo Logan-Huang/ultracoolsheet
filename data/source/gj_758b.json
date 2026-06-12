@@ -1,0 +1,215 @@
+{
+    "Sources": [
+        {
+            "source": "GJ 758B",
+            "ra_deg": 290.8917,
+            "dec_deg": 33.222,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "Thal09",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "Associations": [
+        {
+            "association": "ARG",
+            "membership_probability": 0.997,
+            "comments": "BANYAN Sigma inputs: pm+trig-plx+rv",
+            "adopted": null,
+            "reference": "UCS_24"
+        }
+    ],
+    "CompanionRelationships": [
+        {
+            "companion": "GJ 758",
+            "relationship": "host star",
+            "projected_separation_arcsec": 1.9,
+            "projected_separation_error": null,
+            "projected_separation_error_upper": null,
+            "projected_separation_error_lower": null,
+            "comments": null,
+            "reference": "UCS_24",
+            "other_companion_names": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 15.608,
+            "error": 0.004,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_plx_formula",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 8.8,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: GJ 758B; age range (Gyr): 8.8(+0.9/-0.9)",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "GJ 758B"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 63.45,
+            "parallax_error": 0.35,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Dupu12"
+        },
+        {
+            "parallax_mas": 64.0703,
+            "parallax_error": 0.0154,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        },
+        {
+            "parallax_mas": 63.45,
+            "parallax_error": 0.35,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "VanL07"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "MKO/NSFCam.H",
+            "magnitude": 19.148,
+            "magnitude_error": 0.2,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Jans11",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.J",
+            "magnitude": 18.568,
+            "magnitude_error": 0.2,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Jans11",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.Lp",
+            "magnitude": 15.99,
+            "magnitude_error": 0.1,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Jans11",
+            "regime": "infrared"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 290.8921509,
+            "dec_deg": 33.2226791,
+            "epoch_year": 2016.0,
+            "reference": "Gaia23"
+        },
+        {
+            "ra_deg": 290.8917192,
+            "dec_deg": 33.2219661,
+            "epoch_year": 2000.0,
+            "reference": "Thal09"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 83.342,
+            "pm_ra_error": 0.142,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 162.235,
+            "pm_dec_error": 0.276,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Dupu12"
+        },
+        {
+            "pm_ra": 81.966,
+            "pm_ra_error": 0.013,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 160.158,
+            "pm_dec_error": 0.016,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        },
+        {
+            "pm_ra": 83.4,
+            "pm_ra_error": 0.34,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 162.32,
+            "pm_dec_error": 0.3,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "VanL07"
+        }
+    ],
+    "RadialVelocities": [
+        {
+            "rv_kms": -21.62,
+            "rv_error": 0.12,
+            "rv_error_upper": null,
+            "rv_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Gaia23"
+        },
+        {
+            "rv_kms": -21.24,
+            "rv_error": 0.02,
+            "rv_error_upper": null,
+            "rv_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Soub18"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "T7",
+            "comments": "NIR spectral type; 1-subtype uncertainty",
+            "adopted": null,
+            "reference": "Nils17"
+        }
+    ]
+}

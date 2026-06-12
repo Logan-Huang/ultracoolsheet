@@ -1,0 +1,115 @@
+{
+    "Sources": [
+        {
+            "source": "S Ori 60",
+            "ra_deg": 84.9063,
+            "dec_deg": -2.5116,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "Zapa00",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 230.0,
+            "error": 60.0,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_K_MKO_formula_young",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 0.0018,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: SOri; age range (Gyr): 0.0008-0.0028",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "S Ori 60"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "MKO/NSFCam.H",
+            "magnitude": 18.199,
+            "magnitude_error": 0.13,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Lawr12",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.J",
+            "magnitude": 18.961,
+            "magnitude_error": 0.11,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Lawr12",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.K",
+            "magnitude": 17.622,
+            "magnitude_error": 0.114,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Lawr12",
+            "regime": "nir"
+        },
+        {
+            "band": "UKIRT/WFCAM.Y",
+            "magnitude": 20.147,
+            "magnitude_error": 0.208,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Lawr12",
+            "regime": "nir"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 84.906327,
+            "dec_deg": -2.511645,
+            "epoch_year": 2000.0,
+            "reference": "Lawr13"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "L2",
+            "comments": "optical spectral type",
+            "adopted": null,
+            "reference": "Barr01f"
+        },
+        {
+            "source_type": "L4",
+            "comments": "NIR spectral type; 1-subtype uncertainty",
+            "adopted": null,
+            "reference": "Zapa00"
+        }
+    ]
+}

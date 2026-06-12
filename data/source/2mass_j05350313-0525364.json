@@ -1,0 +1,171 @@
+{
+    "Sources": [
+        {
+            "source": "2MASS J05350313-0525364",
+            "ra_deg": 83.7629,
+            "dec_deg": -5.4269,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "Getm05a",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 391.0,
+            "error": 11.0,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_plx_formula",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 0.002,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: ONC; age range (Gyr): 0.001-0.003",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "2MASS J05350313-0525364"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 2.564,
+            "parallax_error": 0.066,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Koun22"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "2MASS/2MASS.H",
+            "magnitude": 16.49,
+            "magnitude_error": 0.263,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cutr03",
+            "regime": "nir"
+        },
+        {
+            "band": "2MASS/2MASS.J",
+            "magnitude": 16.497,
+            "magnitude_error": 0.14,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cutr03",
+            "regime": "nir"
+        },
+        {
+            "band": "2MASS/2MASS.Ks",
+            "magnitude": 15.4662,
+            "magnitude_error": 0.0216,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "McMa21",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.J",
+            "magnitude": 16.732,
+            "magnitude_error": 0.014,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "McMa21",
+            "regime": "nir"
+        },
+        {
+            "band": "PAN-STARRS/PS1.y",
+            "magnitude": 16.2765,
+            "magnitude_error": 0.0008,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "PS1",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cham16",
+            "regime": "optical"
+        },
+        {
+            "band": "PAN-STARRS/PS1.z",
+            "magnitude": 17.6446,
+            "magnitude_error": 0.2122,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "PS1",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cham16",
+            "regime": "optical"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 83.763045,
+            "dec_deg": -5.426797,
+            "epoch_year": 2000.8980150581792,
+            "reference": "Cutr03"
+        },
+        {
+            "ra_deg": 83.763,
+            "dec_deg": -5.4268,
+            "epoch_year": 2011.8946201232034,
+            "reference": "Magn20"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 40.9,
+            "pm_ra_error": 54.0,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 22.3,
+            "pm_dec_error": 36.6,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Magn20"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "M8.75",
+            "comments": "optical spectral type; 1-subtype uncertainty",
+            "adopted": null,
+            "reference": "Ridd07"
+        },
+        {
+            "source_type": "M9.5",
+            "comments": "NIR spectral type; 2-subtype uncertainty",
+            "adopted": null,
+            "reference": "Weig09"
+        }
+    ]
+}

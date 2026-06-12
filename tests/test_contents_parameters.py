@@ -8,7 +8,7 @@ from astropy import units as u
 def test_companion_parameters(db):
     # Test that the Companion Parameters has expected number of entries
     t = db.query(db.CompanionParameters.c.source).astropy()
-    n_companion_parameters = 1
+    n_companion_parameters = 0
     assert (
         len(t) == n_companion_parameters
     ), f"Found {len(t)} entries in the Companion Parameters table, expected {n_companion_parameters}"
@@ -41,7 +41,7 @@ def test_modeled_parameters(db):
     # Test that ModeledParameters has expected number of entries
     t = db.query(db.ModeledParameters.c.parameter).astropy()
 
-    n_parameters = 2
+    n_parameters = 7773
     assert len(t) == n_parameters, f"Found {len(t)} entries in the ModeledParameters table, expected {n_parameters}"
 
     # Test units are astropy.unit resolvable
@@ -71,7 +71,10 @@ def test_modeled_parameters(db):
 def test_rotational_parameters(db):
     # Test that the Rotational Parameters table has expected number of entries
     t = db.query(db.RotationalParameters.c.source).astropy()
-    n_rotational_parameters = 2
+    n_rotational_parameters = 0
     assert (
         len(t) == n_rotational_parameters
     ), f"Found {len(t)} entries in the Rotational Parameters table, expected {n_rotational_parameters}"
+
+
+

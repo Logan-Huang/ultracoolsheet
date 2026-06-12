@@ -11,12 +11,12 @@ from sqlalchemy import or_
 def test_sources(db):
     # Test that Sources has expected number of entries
     n_sources = db.query(db.Sources).count()
-    assert n_sources == 7, f"found {n_sources} sources"
+    assert n_sources == 3890, f"found {n_sources} sources"
 
 
 @pytest.mark.parametrize(
     "reference, value",
-    [("Perlmutter99", 1), ("Rubin80", 2), ("Naka95", 1), ("Eros99", 1)],
+    [("Card15", 45), ("Knap04", 37), ("Cruz03", 117), ("Kirk11", 95)],
 )
 def test_sources_reference(db, reference, value):
     n_sources = db.query(db.Sources).filter(db.Sources.c.reference == reference).count()

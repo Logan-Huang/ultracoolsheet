@@ -1,0 +1,217 @@
+{
+    "Sources": [
+        {
+            "source": "AF Lep b",
+            "ra_deg": 81.7698,
+            "dec_deg": -11.901,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "DeRo23",
+            "other_references": "DeRo23;Fran23;Mesa23",
+            "comments": null
+        }
+    ],
+    "Associations": [
+        {
+            "association": "BPMG",
+            "membership_probability": 0.999,
+            "comments": "BANYAN Sigma inputs: pm+trig-plx+rv",
+            "adopted": null,
+            "reference": "UCS_24"
+        }
+    ],
+    "CompanionRelationships": [
+        {
+            "companion": "AF Lep",
+            "relationship": "host star",
+            "projected_separation_arcsec": 0.34,
+            "projected_separation_error": null,
+            "projected_separation_error_upper": null,
+            "projected_separation_error_lower": null,
+            "comments": null,
+            "reference": "UCS_24",
+            "other_companion_names": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 26.843,
+            "error": 0.014,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_plx_formula",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 0.024,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: BPMG!; age range (Gyr): 0.024(+0.003/-0.003)",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "AF Lep b"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 37.2539,
+            "parallax_error": 0.0195,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        },
+        {
+            "parallax_mas": 36.98,
+            "parallax_error": 0.48,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "VanL07"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "2MASS/2MASS.Ks",
+            "magnitude": 16.75,
+            "magnitude_error": 0.07,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "DeRo23",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.H",
+            "magnitude": 18.61,
+            "magnitude_error": 0.36,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Mesa23",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.J",
+            "magnitude": 19.22,
+            "magnitude_error": 0.33,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Mesa23",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.Lp",
+            "magnitude": 14.87,
+            "magnitude_error": 0.15,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Fran23",
+            "regime": "infrared"
+        },
+        {
+            "band": "UKIRT/WFCAM.Y",
+            "magnitude": 19.36,
+            "magnitude_error": 0.61,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Mesa23",
+            "regime": "nir"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 81.7698472,
+            "dec_deg": -11.9009628,
+            "epoch_year": 2000.0,
+            "reference": "Gaia21a"
+        },
+        {
+            "ra_deg": 81.7699203,
+            "dec_deg": -11.9011822,
+            "epoch_year": 2016.0,
+            "reference": "Gaia23"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 16.915,
+            "pm_ra_error": 0.018,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -49.318,
+            "pm_dec_error": 0.016,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        },
+        {
+            "pm_ra": 17.55,
+            "pm_ra_error": 0.36,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -50.23,
+            "pm_dec_error": 0.36,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "VanL07"
+        }
+    ],
+    "RadialVelocities": [
+        {
+            "rv_kms": 21.1,
+            "rv_error": 0.37,
+            "rv_error_upper": null,
+            "rv_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Gaia23"
+        },
+        {
+            "rv_kms": 20.24,
+            "rv_error": 0.53,
+            "rv_error_upper": null,
+            "rv_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Whit07"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "L7-T0.5",
+            "comments": "NIR spectral type",
+            "adopted": null,
+            "reference": "DeRo23"
+        }
+    ]
+}

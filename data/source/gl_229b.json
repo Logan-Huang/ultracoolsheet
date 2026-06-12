@@ -1,105 +1,242 @@
 {
     "Sources": [
         {
-            "source": "Gl 229b",
-            "ra_deg": 92.6442,
-            "dec_deg": -21.8646,
+            "source": "Gl 229B",
+            "ra_deg": 92.645,
+            "dec_deg": -21.8667,
             "epoch_year": 2000.0,
             "equinox": "J2000",
-            "reference": "Naka95",
+            "reference": "Naka95b",
             "other_references": null,
             "comments": null
         }
     ],
-    "CompanionParameters": [
-        {
-            "companion": "Gl 229",
-            "parameter": "age",
-            "value": 3.8,
-            "error": 0.5,
-            "unit": "Gyr",
-            "comments": null,
-            "reference": "Gaid23"
-        }
-    ],
     "CompanionRelationships": [
         {
-            "companion": "Gl 229",
-            "relationship": "Child",
-            "projected_separation_arcsec": null,
+            "companion": "Gl 229A",
+            "relationship": "host star",
+            "projected_separation_arcsec": 7.8,
             "projected_separation_error": null,
+            "projected_separation_error_upper": null,
+            "projected_separation_error_lower": null,
             "comments": null,
-            "reference": "Naka95",
+            "reference": "UCS_24",
             "other_companion_names": null
         }
     ],
     "ModeledParameters": [
         {
-            "parameter": "age",
-            "value": 3.8,
-            "error": 0.5,
-            "unit": "Gyr",
-            "comments": null,
-            "reference": "Gaid23"
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 5.7612,
+            "error": 0.0006,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_plx_formula",
+            "reference": "UCS_24"
         },
         {
-            "parameter": "mass",
-            "value": 33.5,
-            "error": 0.3,
-            "unit": "M_jup",
-            "comments": "Data for WISE 1049A",
-            "reference": "Chen24"
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 2.45,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: Gl 229B; age range (Gyr): 2.45(+0.2/-0.2)",
+            "reference": "UCS_24"
         }
     ],
     "Names": [
         {
-            "other_name": "Gl 229b"
+            "other_name": "Gl 229B"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 173.19,
+            "parallax_error": 1.12,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Fahe12"
         },
         {
-            "other_name": "HD 42581b"
+            "parallax_mas": 173.574,
+            "parallax_error": 0.017,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        },
+        {
+            "parallax_mas": 173.81,
+            "parallax_error": 0.99,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "VanL07"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "MKO/NSFCam.H",
+            "magnitude": 14.36,
+            "magnitude_error": 0.05,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Legg02b",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.J",
+            "magnitude": 14.01,
+            "magnitude_error": 0.05,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Legg02b",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.K",
+            "magnitude": 14.36,
+            "magnitude_error": 0.05,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Legg02b",
+            "regime": "nir"
+        },
+        {
+            "band": "MKO/NSFCam.Lp",
+            "magnitude": 12.24,
+            "magnitude_error": 0.05,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Goli04a",
+            "regime": "infrared"
+        },
+        {
+            "band": "MKO/NSFCam.Mp",
+            "magnitude": 11.74,
+            "magnitude_error": 0.11,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Goli04a",
+            "regime": "infrared"
+        },
+        {
+            "band": "UKIRT/WFCAM.Y",
+            "magnitude": 15.17,
+            "magnitude_error": 0.1,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Legg02b",
+            "regime": "nir"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 92.645,
+            "dec_deg": -21.86667,
+            "epoch_year": 2000.0,
+            "reference": "Fahe09"
+        },
+        {
+            "ra_deg": 92.6435776,
+            "dec_deg": -21.8678226,
+            "epoch_year": 2016.0,
+            "reference": "Gaia23"
         }
     ],
     "ProperMotions": [
         {
-            "pm_ra": -137.14,
-            "pm_dec": -714.17,
-            "pm_ra_error": 0.52,
-            "pm_dec_error": 0.79,
-            "adopted": true,
+            "pm_ra": -137.0,
+            "pm_ra_error": 0.9,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -714.1,
+            "pm_dec_error": 0.6,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
             "comments": null,
-            "reference": "vanL07"
-        }
-    ],
-    "RotationalParameters": [
-        {
-            "period_hr": 6.94,
-            "period_error": null,
-            "v_sin_i_kms": null,
-            "v_sin_i_error": null,
-            "inclination": null,
-            "inclination_error": null,
-            "adopted": null,
-            "comments": "Data for WISE 1049A",
-            "reference": "Apai21"
+            "reference": "Fahe09"
         },
         {
-            "period_hr": 7.0,
-            "period_error": null,
-            "v_sin_i_kms": 27.2,
-            "v_sin_i_error": 4.1,
-            "inclination": 69.0,
-            "inclination_error": 28.0,
-            "adopted": null,
-            "comments": "Data for WISE 1049A",
-            "reference": "Chen24"
+            "pm_ra": -135.692,
+            "pm_ra_error": 0.011,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -719.178,
+            "pm_dec_error": 0.017,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        },
+        {
+            "pm_ra": -137.14,
+            "pm_ra_error": 0.52,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -714.17,
+            "pm_dec_error": 0.79,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "VanL07"
+        }
+    ],
+    "RadialVelocities": [
+        {
+            "rv_kms": 4.23,
+            "rv_error": 0.12,
+            "rv_error_upper": null,
+            "rv_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Gaia23"
+        },
+        {
+            "rv_kms": 4.734,
+            "rv_error": 0.0006,
+            "rv_error_upper": null,
+            "rv_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Soub18"
         }
     ],
     "SourceTypes": [
         {
-            "source_type": "T7",
-            "comments": null,
+            "source_type": "T7 pec",
+            "comments": "NIR spectral type",
             "adopted": null,
-            "reference": "Burg06"
+            "reference": "Burg06b"
         }
     ]
 }

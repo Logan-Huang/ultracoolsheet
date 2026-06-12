@@ -1,0 +1,198 @@
+{
+    "Sources": [
+        {
+            "source": "KOI-205b",
+            "ra_deg": 295.4966,
+            "dec_deg": 42.5379,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "Diaz13",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "CompanionRelationships": [
+        {
+            "companion": "KOI-205",
+            "relationship": "host star",
+            "projected_separation_arcsec": 0.0,
+            "projected_separation_error": null,
+            "projected_separation_error_upper": null,
+            "projected_separation_error_lower": null,
+            "comments": null,
+            "reference": "UCS_24",
+            "other_companion_names": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 596.0,
+            "error": 6.0,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_plx_formula",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 1.7,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: KOI-205b; age range (Gyr): 1.7(+2.5/-1.2)",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "KOI-205b"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 1.6723,
+            "parallax_error": 0.0204,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Gaia18"
+        },
+        {
+            "parallax_mas": 1.6787,
+            "parallax_error": 0.0159,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "WISE/WISE.W1",
+            "magnitude": 12.561,
+            "magnitude_error": 0.013,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Maro21",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W2",
+            "magnitude": 12.655,
+            "magnitude_error": 0.009,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Maro21",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W3",
+            "magnitude": 12.396,
+            "magnitude_error": 0.294,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": null,
+            "reference": "Cutr13",
+            "regime": "infrared"
+        },
+        {
+            "band": "WISE/WISE.W4",
+            "magnitude": 9.307,
+            "magnitude_error": null,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "WISE",
+            "epoch": null,
+            "comments": "upper limit",
+            "reference": "Cutr13",
+            "regime": "infrared"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 295.496653,
+            "dec_deg": 42.5378891,
+            "epoch_year": 2000.0,
+            "reference": "Gaia18"
+        },
+        {
+            "ra_deg": 295.4967117,
+            "dec_deg": 42.5379337,
+            "epoch_year": 2016.0,
+            "reference": "Gaia23"
+        },
+        {
+            "ra_deg": 295.4967267,
+            "dec_deg": 42.5379311,
+            "epoch_year": 2015.405,
+            "reference": "Maro21"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 9.742,
+            "pm_ra_error": 0.034,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 10.024,
+            "pm_dec_error": 0.037,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Gaia18"
+        },
+        {
+            "pm_ra": 9.709,
+            "pm_ra_error": 0.018,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 10.046,
+            "pm_dec_error": 0.019,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        },
+        {
+            "pm_ra": 16.1,
+            "pm_ra_error": 4.4,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 12.5,
+            "pm_dec_error": 4.5,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Maro21"
+        }
+    ],
+    "RadialVelocities": [
+        {
+            "rv_kms": 15.06,
+            "rv_error": 0.03,
+            "rv_error_upper": null,
+            "rv_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Diaz13"
+        }
+    ]
+}

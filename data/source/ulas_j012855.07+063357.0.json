@@ -1,0 +1,91 @@
+{
+    "Sources": [
+        {
+            "source": "ULAS J012855.07+063357.0",
+            "ra_deg": 22.2294,
+            "dec_deg": 6.5658,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "Burn13",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 68.0,
+            "error": 14.0,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_J_MKO_formula",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 2.5,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: Field; age range (Gyr): 2.5(+4.3/-2)",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "ULAS J012855.07+063357.0"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "MKO/NSFCam.J",
+            "magnitude": 18.928,
+            "magnitude_error": 0.115,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Lawr12",
+            "regime": "nir"
+        },
+        {
+            "band": "UKIRT/WFCAM.Y",
+            "magnitude": 19.656,
+            "magnitude_error": 0.138,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Lawr12",
+            "regime": "nir"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 22.229439,
+            "dec_deg": 6.565828,
+            "epoch_year": 2000.0,
+            "reference": "Lawr13"
+        },
+        {
+            "ra_deg": 22.229,
+            "dec_deg": 6.5662,
+            "epoch_year": 2012.9877618069816,
+            "reference": "Magn20"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "T6",
+            "comments": "NIR spectral type",
+            "adopted": null,
+            "reference": "Burn13"
+        }
+    ]
+}

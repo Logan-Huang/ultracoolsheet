@@ -1,0 +1,194 @@
+{
+    "Sources": [
+        {
+            "source": "HD 72946 B",
+            "ra_deg": 128.9636,
+            "dec_deg": 6.6228,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "Bouc16",
+            "other_references": "Bouc16;Mair20a",
+            "comments": null
+        }
+    ],
+    "CompanionRelationships": [
+        {
+            "companion": "HD 72946",
+            "relationship": "host star",
+            "projected_separation_arcsec": 0.24,
+            "projected_separation_error": null,
+            "projected_separation_error_upper": null,
+            "projected_separation_error_lower": null,
+            "comments": null,
+            "reference": "UCS_24",
+            "other_companion_names": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 25.654,
+            "error": 0.026,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_plx_formula",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 1.9,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: HD 72946 B; age range (Gyr): 1.9(+0.5/-0.6)",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "HD 72946 B"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 38.6528,
+            "parallax_error": 0.0523,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Gaia18"
+        },
+        {
+            "parallax_mas": 38.9809,
+            "parallax_error": 0.0412,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        },
+        {
+            "parallax_mas": 38.11,
+            "parallax_error": 0.85,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "VanL07"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "2MASS/2MASS.H",
+            "magnitude": 14.49,
+            "magnitude_error": 0.07,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Mair20a",
+            "regime": "nir"
+        },
+        {
+            "band": "2MASS/2MASS.J",
+            "magnitude": 15.44,
+            "magnitude_error": 0.13,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": "2MASS",
+            "epoch": null,
+            "comments": null,
+            "reference": "Mair20a",
+            "regime": "nir"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 128.9636108,
+            "dec_deg": 6.6227696,
+            "epoch_year": 2000.0,
+            "reference": "Gaia18"
+        },
+        {
+            "ra_deg": 128.9629974,
+            "dec_deg": 6.6221557,
+            "epoch_year": 2016.0,
+            "reference": "Gaia23"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -136.543,
+            "pm_ra_error": 0.088,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -138.166,
+            "pm_dec_error": 0.051,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Gaia18"
+        },
+        {
+            "pm_ra": -136.593,
+            "pm_ra_error": 0.044,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -137.148,
+            "pm_dec_error": 0.034,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        },
+        {
+            "pm_ra": -127.36,
+            "pm_ra_error": 1.19,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -132.16,
+            "pm_dec_error": 0.82,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "VanL07"
+        }
+    ],
+    "RadialVelocities": [
+        {
+            "rv_kms": 28.7,
+            "rv_error": 0.12,
+            "rv_error_upper": null,
+            "rv_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Gaia23"
+        },
+        {
+            "rv_kms": 28.95,
+            "rv_error": 0.16,
+            "rv_error_upper": null,
+            "rv_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Soub08"
+        }
+    ],
+    "SourceTypes": [
+        {
+            "source_type": "L5+/-1.5",
+            "comments": "NIR spectral type",
+            "adopted": null,
+            "reference": "Mair20a"
+        }
+    ]
+}

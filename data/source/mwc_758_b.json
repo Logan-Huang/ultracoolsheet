@@ -1,0 +1,166 @@
+{
+    "Sources": [
+        {
+            "source": "MWC 758 b",
+            "ra_deg": 82.6147,
+            "dec_deg": 25.3325,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "Wagn23",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "CompanionRelationships": [
+        {
+            "companion": "MWC 758",
+            "relationship": "host star",
+            "projected_separation_arcsec": 0.62,
+            "projected_separation_error": null,
+            "projected_separation_error_upper": null,
+            "projected_separation_error_lower": null,
+            "comments": null,
+            "reference": "UCS_24",
+            "other_companion_names": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 155.8,
+            "error": 0.7,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_plx_formula",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 0.0015,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: Taurus; age range (Gyr): 0.001-0.002",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "MWC 758 b"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 6.2405,
+            "parallax_error": 0.0672,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Gaia18"
+        },
+        {
+            "parallax_mas": 6.4157,
+            "parallax_error": 0.0314,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        },
+        {
+            "parallax_mas": 3.58,
+            "parallax_error": 0.9,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "VanL07"
+        }
+    ],
+    "Photometry": [
+        {
+            "band": "MKO/NSFCam.Lp",
+            "magnitude": 17.3,
+            "magnitude_error": 0.5,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Wagn19",
+            "regime": "infrared"
+        },
+        {
+            "band": "MKO/NSFCam.Mp",
+            "magnitude": 16.5,
+            "magnitude_error": 0.5,
+            "magnitude_error_upper": null,
+            "magnitude_error_lower": null,
+            "telescope": null,
+            "epoch": null,
+            "comments": null,
+            "reference": "Wagn19",
+            "regime": "infrared"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 82.6147028,
+            "dec_deg": 25.3325228,
+            "epoch_year": 2000.0,
+            "reference": "Gaia18"
+        },
+        {
+            "ra_deg": 82.6147232,
+            "dec_deg": 25.3324032,
+            "epoch_year": 2016.0,
+            "reference": "Gaia23"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": 3.586,
+            "pm_ra_error": 0.112,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -26.751,
+            "pm_dec_error": 0.083,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "Gaia18"
+        },
+        {
+            "pm_ra": 3.685,
+            "pm_ra_error": 0.033,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -26.373,
+            "pm_dec_error": 0.022,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        },
+        {
+            "pm_ra": 5.42,
+            "pm_ra_error": 1.16,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": -26.09,
+            "pm_dec_error": 0.53,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": false,
+            "comments": null,
+            "reference": "VanL07"
+        }
+    ]
+}

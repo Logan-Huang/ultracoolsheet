@@ -1,0 +1,101 @@
+{
+    "Sources": [
+        {
+            "source": "SDSS J141126.20+200911.1B",
+            "ra_deg": 212.8593,
+            "dec_deg": 20.1531,
+            "epoch_year": 2000.0,
+            "equinox": "J2000",
+            "reference": "Litt14",
+            "other_references": null,
+            "comments": null
+        }
+    ],
+    "CompanionRelationships": [
+        {
+            "companion": "SDSS J141126.20+200911.1",
+            "relationship": "host star",
+            "projected_separation_arcsec": 0.0,
+            "projected_separation_error": null,
+            "projected_separation_error_upper": null,
+            "projected_separation_error_lower": null,
+            "comments": null,
+            "reference": "UCS_24",
+            "other_companion_names": null
+        }
+    ],
+    "ModeledParameters": [
+        {
+            "model": "UCS adopted distance",
+            "parameter": "distance",
+            "value": 177.0,
+            "error": 3.0,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "pc",
+            "comments": "distance source: dist_plx_formula",
+            "reference": "UCS_24"
+        },
+        {
+            "model": "UCS age assignment",
+            "parameter": "age",
+            "value": 2.5,
+            "error": null,
+            "error_upper": null,
+            "error_lower": null,
+            "unit": "Gyr",
+            "comments": "age_category: Field; age range (Gyr): 2.5(+4.3/-2)",
+            "reference": "UCS_24"
+        }
+    ],
+    "Names": [
+        {
+            "other_name": "SDSS J141126.20+200911.1B"
+        }
+    ],
+    "Parallaxes": [
+        {
+            "parallax_mas": 5.6532,
+            "parallax_error": 0.1135,
+            "parallax_error_upper": null,
+            "parallax_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        }
+    ],
+    "Positions": [
+        {
+            "ra_deg": 212.8590393,
+            "dec_deg": 20.1531391,
+            "epoch_year": 2016.0,
+            "reference": "Gaia23"
+        }
+    ],
+    "ProperMotions": [
+        {
+            "pm_ra": -45.928,
+            "pm_ra_error": 0.096,
+            "pm_ra_error_upper": null,
+            "pm_ra_error_lower": null,
+            "pm_dec": 16.231,
+            "pm_dec_error": 0.095,
+            "pm_dec_error_upper": null,
+            "pm_dec_error_lower": null,
+            "adopted": true,
+            "comments": "Gaia astrometry is for the primary star",
+            "reference": "Gaia23"
+        }
+    ],
+    "RadialVelocities": [
+        {
+            "rv_kms": -20.8,
+            "rv_error": 12.27,
+            "rv_error_upper": null,
+            "rv_error_lower": null,
+            "adopted": true,
+            "comments": null,
+            "reference": "Angu17"
+        }
+    ]
+}

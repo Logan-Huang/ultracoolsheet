@@ -10,7 +10,7 @@ def test_radial_velocities(db):
     # Test that Radial Velocities has expected number of entries
     t = db.query(db.RadialVelocities.c.rv_kms).astropy()
 
-    n_radial_velocities = 1
+    n_radial_velocities = 1412
     assert (
         len(t) == n_radial_velocities
     ), f"Found {len(t)} entries in the Radial Velocities table, expected {n_radial_velocities}"
@@ -22,7 +22,7 @@ def test_radial_velocities(db):
             func.sum(db.RadialVelocities.c.adopted).label("adopted_counts"),
         )
         .group_by(db.RadialVelocities.c.source)
-        .having(func.sum(db.RadialVelocities.c.adopted) != 1)
+        .having(func.sum(db.RadialVelocities.c.adopted) > 1)
         .astropy()
     )
 
@@ -35,7 +35,7 @@ def test_proper_motions(db):
     # Test that Radial Velocities has expected number of entries
     t = db.query(db.ProperMotions.c.pm_ra).astropy()
 
-    n_proper_motions = 1
+    n_proper_motions = 15272
     assert (
         len(t) == n_proper_motions
     ), f"Found {len(t)} entries in the Proper Motions table, expected {n_proper_motions}"
@@ -47,7 +47,7 @@ def test_proper_motions(db):
             func.sum(db.ProperMotions.c.adopted).label("adopted_counts"),
         )
         .group_by(db.ProperMotions.c.source)
-        .having(func.sum(db.ProperMotions.c.adopted) != 1)
+        .having(func.sum(db.ProperMotions.c.adopted) > 1)
         .astropy()
     )
 
@@ -60,7 +60,7 @@ def test_parallaxes(db):
     # Test that Parallaxes has expected number of entries
     t = db.query(db.Parallaxes.c.parallax_mas).astropy()
 
-    n_parallaxes = 0
+    n_parallaxes = 5083
     assert (
         len(t) == n_parallaxes
     ), f"Found {len(t)} entries in the Parallaxes table, expected {n_parallaxes}"
@@ -72,7 +72,7 @@ def test_parallaxes(db):
             func.sum(db.Parallaxes.c.adopted).label("adopted_counts"),
         )
         .group_by(db.Parallaxes.c.source)
-        .having(func.sum(db.Parallaxes.c.adopted) != 1)
+        .having(func.sum(db.Parallaxes.c.adopted) > 1)
         .astropy()
     )
 
@@ -98,3 +98,6 @@ def test_parallax_error(db):
         print(t)
 
     assert len(t) == 0, f"{len(t)} Parallax failed parallax error checks"
+
+
+

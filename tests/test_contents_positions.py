@@ -8,7 +8,7 @@ from sqlalchemy import or_
 def test_positions(db):
     # Test that Positions has expected number of entries
     t = db.query(db.Positions.c.source).astropy()
-    n_positions = 1
+    n_positions = 14515
     assert len(t) == n_positions, f"Found {len(t)} entries in the Positions table, expected {n_positions}"
 
 
@@ -30,3 +30,4 @@ def test_for_valid_coordinates(db):
     )
 
     assert len(t) == 0, f"{len(t)} Positions failed coordinate checks: {t}"
+

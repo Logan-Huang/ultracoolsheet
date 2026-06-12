@@ -17,11 +17,11 @@ def db():
 
     # Confirm file was created
     assert os.path.exists(
-        "astrodb-template.sqlite"
-    ), "Database file 'astrodb-template.sqlite' was not created."
+        "ultracoolsheet.sqlite"
+    ), "Database file 'ultracoolsheet.sqlite' was not created."
 
     logger.info(
-        "Loaded AstroDB Template database using build_db_from_json function in conftest.py"
+        "Loaded ultracoolsheet database using build_db_from_json function in conftest.py"
     )
 
     return db

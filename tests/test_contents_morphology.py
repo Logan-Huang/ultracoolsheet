@@ -8,7 +8,7 @@ from sqlalchemy import or_
 def test_morphology(db):
     # Test that Morphology has expected number of entries
     t = db.query(db.Morphology.c.source).astropy()
-    n_morphology = 1
+    n_morphology = 0
     assert len(t) == n_morphology, f"Found {len(t)} entries in the Morphology table, expected {n_morphology}"
 
 
@@ -32,3 +32,4 @@ def test_for_valid_morphology(db):
     )
 
     assert len(t) == 0, f"{len(t)} Morphology failed morphology checks: {t}"
+
