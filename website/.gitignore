@@ -26,10 +26,12 @@ Thumbs.db
 *.log.*
 
 # Environment
-.env
+# .env and uv.lock are intentionally tracked in THIS repo so the website is
+# clone-and-run: .env holds only non-secret config (DB path + table/column
+# names), no credentials. Other local env files (.env.local, etc.) stay ignored.
 .env.*
 !.env.example
-uv.lock
+!.env
 
 # Testing
 .pytest_cache/

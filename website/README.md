@@ -17,20 +17,27 @@ This uses the AstroDB Toolkit to explore databases created with it.
 uv sync
 ```
 
-### Running the Application
+### Running the Application (UltracoolSheet)
 
-Grab a copy of the database at https://github.com/SIMPLE-AstroDB/SIMPLE-binary and place it in the main directory.   
-Update configuration settings (CONFIG.md) if needed.
+This folder is pre-configured for the **UltracoolSheet** catalog. The database
+(`ultracoolsheet.sqlite`) ships at the repository root and `.env` is already set up,
+so there is nothing to download or configure — just run it **from this `website/`
+directory**:
 
 ```bash
-# Start the development server
-uv run serve
-
-# Or run it manually with
-uvicorn astro_web.main:app --reload --port 8000
+cd website          # the .env and DB path are relative to this directory
+uv sync             # install dependencies (versions pinned via uv.lock)
+uv run uvicorn astro_web.main:app --host 127.0.0.1 --port 8050
 ```
 
-Then open your browser to http://localhost:8000
+Then open your browser to http://localhost:8050
+
+> **Notes**
+> - Always start the server from `website/`. The committed `.env` points at the
+>   database with a path relative to this directory (`../ultracoolsheet.sqlite`),
+>   so launching from elsewhere will not find the DB.
+> - `uv run serve` also works but is hard-coded to port 8000; use the explicit
+>   `--port` command above if port 8000 is already in use.
 
 ## Project Structure
 
