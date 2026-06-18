@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Search Astronomical Objects</h1>
+
+{% if error %}
+<div class="error-message">
+  <p>{{ error }}</p>
+</div>
+{% endif %}
+
+<h2>Object Search</h2>
+<p>Search for objects by name.</p>
+
+<form method="post" action="/search/results" id="searchForm">
+  <div class="form-group">
+    <label for="query">Search Term:</label>
+    <input type="text" id="query" name="query" placeholder="Enter object name..." required>
+  </div>
+  <button type="submit">Search</button>
+</form>
+
+<h2>Cone Search</h2>
+<p>Search for objects within a specified region of the sky by coordinates.</p>
+
+<form method="post" action="/search/cone-results" id="coneSearchForm">
+  <div class="form-group">
+    <label for="coordinates">Coordinates:</label>
+    <input type="text" id="coordinates" name="coordinates" placeholder="e.g., 209.30 14.48 or 13h57m12s +14d28m39s" required>
+    <small>Enter RA and Dec (e.g., "13h57m12s +14d28m39s" or "209.30 14.48")</small>
+  </div>
+  
+  <div class="form-group">
+    <label for="radius">Search Radius:</label>
+    <div style="display: flex; gap: 0.5rem; align-items: center;">
+      <input type="number" id="radius" name="radius" step="0.001" min="0" required style="max-width: 150px;" value="1">
+      <select id="radius_unit" name="radius_unit" required>
+        <option value="arcseconds">Arcseconds</option>
+        <option value="arcminutes">Arcminutes</option>
+        <option value="degrees" selected>Degrees</option>
+      </select>
+    </div>
+  </div>
+  
+  <button type="submit">Search</button>
+</form>
+
+<script>
+document.getElementById('searchForm').addEventListener('submit', function(e) {
+  const query = document.getElementById('query').value.trim();
+  if (!query) {
+    e.preventDefault();
+    alert('Please enter a search term');
+  }
+});
+
+document.getElementById('coneSearchForm').addEventListener('submit', function(e) {
+  const coordinates = document.getElementById('coordinates').value.trim();
+  const radius = document.getElementById('radius').value.trim();
+  
+  if (!coordinates || !radius) {
+    e.preventDefault();
+    alert('Please fill in all required fields');
+  }
+});
+</script>
+{% endblock %}

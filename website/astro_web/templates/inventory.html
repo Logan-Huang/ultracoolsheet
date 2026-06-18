@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block content %}
+<div class="inventory-container">
+    <h1>Source Inventory: {{ source_name }}</h1>
+    
+    {% if has_spectra %}
+    <div class="spectra-link">
+        <a href="/source/{{ source_name|urlencode }}/spectra" class="view-spectra-link">View Spectra →</a>
+    </div>
+    {% endif %}
+    
+    {% if has_error %}
+    <div class="error-message">
+        <p>{{ error_message }}</p>
+        <a href="/browse">Return to Browse</a>
+    </div>
+    {% else %}
+        {% for table_name, table_data in inventory_data.items() %}
+        {% if table_data and table_data|length > 0 %}
+        <div class="inventory-table-section">
+            <h2>{{ table_name }}</h2>
+            <table id="table-{{ loop.index }}" class="display">
+                <thead>
+                    <tr>
+                        {% for column in table_data[0].keys() %}
+                        <th>{{ column }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in table_data %}
+                    <tr>
+                        {% for value in row.values() %}
+                        <td>{{ value if value is not none else '' }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(document).ready(function() {
+    // Initialize DataTables for all tables with class 'display'
+    $('table.display').each(function() {
+        $(this).DataTable({
+            "paging": false,
+            "scrollX": true,
+            "autoWidth": false,
+            "scrollCollapse": true,
+            "info": false,
+            "order": [],
+            "columnDefs": [
+                { "orderable": false, "targets": -1 } // Make last column non-sortable if needed
+            ],
+            "language": {
+                "search": "Search:"
+            }
+        });
+    });
+});
+</script>
+{% endblock %}
+

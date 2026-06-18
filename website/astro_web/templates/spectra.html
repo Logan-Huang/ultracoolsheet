@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="https://cdn.bokeh.org/bokeh/release/bokeh-3.8.0.min.css"
+      crossorigin="anonymous">
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-3.8.0.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.8.0.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-3.8.0.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-3.8.0.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-3.8.0.min.js"
+        crossorigin="anonymous"></script>
+{% if plot_script %}
+    {{ plot_script|safe }}
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="spectra-container">
+    <div class="spectra-header">
+        <h1>Spectra for {{ source_name }} 
+            {% if has_spectra %}
+                <span class="spectra-count">({{ spectra_count }})</span>
+            {% endif %}
+        </h1>
+        <a href="/source/{{ source_name|urlencode }}" class="back-link">← Back to Inventory</a>
+    </div>
+    
+    {% if not has_spectra %}
+    <div class="no-spectra-message">
+        <p>No spectra available for this source.</p>
+    </div>
+    {% else %}
+        <!-- Bokeh plot visualization -->
+        <div class="visualization">
+            {% if plot_div %}
+                {{ plot_div|safe }}
+            {% endif %}
+        </div>
+        
+        <!-- Metadata table -->
+        {% if spectra_metadata and spectra_metadata|length > 0 %}
+        <div class="metadata-section">
+            <h2>Spectrum Metadata</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Observation Date</th>
+                        <th>Regime</th>
+                        <th>Telescope</th>
+                        <th>Instrument</th>
+                        <th>Reference</th>
+                        <th>Access URL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for metadata in spectra_metadata %}
+                    <tr>
+                        <td>
+                            {% if metadata.display_status == "displayed" %}
+                                <span class="status-displayed">✓ Displayed</span>
+                            {% else %}
+                                <span class="status-failed">✗ Failed to load</span>
+                            {% endif %}
+                        </td>
+                        <td>{{ metadata.observation_date }}</td>
+                        <td>{{ metadata.regime }}</td>
+                        <td>{{ metadata.telescope }}</td>
+                        <td>{{ metadata.instrument }}</td>
+                        <td>{{ metadata.reference }}</td>
+                        <td>
+                            {% if metadata.access_url %}
+                                <a href="{{ metadata.access_url }}" target="_blank">Download</a>
+                            {% else %}
+                                -
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+    {% endif %}
+</div>
+{% endblock %}
+

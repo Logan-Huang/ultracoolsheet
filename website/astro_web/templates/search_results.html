@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block content %}
+<h1>Search Results for "{{ query_text }}"</h1>
+
+{% if error %}
+<div class="error-message">
+  <p>{{ error }}</p>
+</div>
+{% endif %}
+
+{% if warning %}
+<div class="warning-message">
+  <p>{{ warning }}</p>
+</div>
+{% endif %}
+
+{% if results %}
+  <div class="search-results-info">
+    <p>Found {{ total_count }} result(s) in {{ execution_time }} seconds</p>
+  </div>
+  
+  <table id="resultsTable" class="display">
+    <thead>
+      <tr>
+        {% for column in results[0].keys() %}
+        <th>{{ column }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for result in results %}
+      <tr>
+        {% for value in result.values() %}
+        <td>{{ value|safe if value is not none else '' }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% else %}
+  <div class="no-results-message">
+    <p>No results found for "{{ query_text }}"</p>
+  </div>
+{% endif %}
+
+<a href="/search" class="new-search-link">New Search</a>
+
+<script>
+    $(document).ready(function() {
+        $('#resultsTable').DataTable({
+            pageLength: 10,
+            lengthMenu: [[10, 25, 50, 100], [10, 25, 50, 100]],
+            order: [],
+            responsive: true
+        });
+    });
+</script>
+{% endblock %}

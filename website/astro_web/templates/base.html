@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Web</title>
+    <link rel="stylesheet" href="/static/style.css">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <h1 class="nav-logo">Astro Web</h1>
+                <ul class="nav-menu">
+                    {% for nav_item in nav_items %}
+                    <li class="nav-item">
+                        <a href="{{ nav_item.route }}" 
+                           class="nav-link {% if nav_item.is_active %}nav-active{% endif %}">
+                            {{ nav_item.label }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    <footer>
+        <p>&copy; 2025</p>
+    </footer>
+    
+    {% block scripts %}{% endblock %}
+</body>
+</html>
+

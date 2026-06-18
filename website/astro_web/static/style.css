@@ -1,0 +1,554 @@
+/* Clean minimal theme with astronomy-inspired palette */
+
+:root {
+    --bg-light: #f5f5f7;
+    --text-dark: #1d1d1f;
+    --accent-blue: #0a84ff;
+    --accent-purple: #5e5ce6;
+    --accent-indigo: #6366f1;
+    --border-color: #d2d2d7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--bg-light);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Navigation bar */
+.nav-bar {
+    background-color: var(--bg-light);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-indigo);
+    margin: 0;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: #e5e7eb;
+    color: var(--accent-indigo);
+}
+
+.nav-link.nav-active {
+    background-color: var(--accent-indigo);
+    color: white;
+    font-weight: 600;
+}
+
+.nav-link.nav-active:hover {
+    background-color: var(--accent-purple);
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--accent-indigo);
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--accent-purple);
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+
+footer {
+    background-color: var(--bg-light);
+    border-top: 1px solid var(--border-color);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    color: #86868b;
+}
+
+footer p {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+/* Visualization */
+.visualization {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.visualization h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--accent-indigo);
+    margin-bottom: 1.5rem;
+}
+
+/* Plot container styling */
+#plot-container {
+    width: 100%;
+    height: 500px;
+    margin-top: 1rem;
+}
+
+.bk-plot-container {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Links */
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-purple);
+    text-decoration: underline;
+}
+
+/* Code inline */
+code {
+    background-color: #f5f5f7;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Courier New', monospace;
+    font-size: 0.875rem;
+    color: var(--accent-purple);
+}
+
+/* Table styling */
+.table-container {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.table-container h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--accent-indigo);
+    margin-bottom: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+table th {
+    background-color: var(--accent-indigo);
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+table td {
+    font-size: 0.875rem;
+    color: var(--text-dark);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+table tbody tr:hover {
+    background-color: #f3f4f6;
+}
+
+table a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+table a:hover {
+    color: var(--accent-purple);
+    text-decoration: underline;
+}
+
+/* Error message */
+.error-message {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fee2e2;
+    border-left: 4px solid #ef4444;
+    border-radius: 4px;
+}
+
+.error-message p {
+    color: #991b1b;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* DataTables styling */
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+    margin-top: 1rem;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    margin: 0 0.25rem;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: white;
+    color: var(--text-dark);
+    transition: all 0.2s ease;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #e5e7eb;
+    color: var(--accent-purple);
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: var(--accent-indigo);
+    color: white;
+    border-color: var(--accent-indigo);
+}
+
+/* Inventory Page Styles */
+.inventory-container {
+    padding: 2rem;
+}
+
+.inventory-container h1 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: var(--accent-indigo);
+}
+
+.inventory-table-section {
+    margin-bottom: 3rem;
+}
+
+.inventory-table-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: var(--accent-purple);
+}
+
+/* Search form styling */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--accent-indigo);
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--accent-indigo);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.form-group small {
+    display: block;
+    margin-top: 0.25rem;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+/* Button styling */
+button[type="submit"],
+.new-search-link,
+.view-spectra-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-indigo);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover,
+.new-search-link:hover,
+.view-spectra-link:hover {
+    background-color: var(--accent-purple);
+    color: white;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.back-link:hover {
+    background-color: #e5e7eb;
+    color: var(--accent-purple);
+}
+
+
+.warning-message {
+    background-color: #fff3cd;
+    border: 1px solid #ffc107;
+    color: #856404;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.warning-message p {
+    margin: 0;
+}
+
+/* Search results page specific styling */
+.search-results-info {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background-color: #f0f9ff;
+    border-left: 4px solid var(--accent-blue);
+    border-radius: 4px;
+    color: var(--text-dark);
+}
+
+.search-results-info p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.no-results-message {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.no-results-message p {
+    margin: 0;
+    color: #92400e;
+    font-weight: 500;
+}
+
+
+/* Spectra page styling */
+.spectra-container {
+    padding: 2rem;
+}
+
+.spectra-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.spectra-header h1 {
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    color: var(--accent-indigo);
+}
+
+.spectra-count {
+    font-weight: normal;
+    color: var(--accent-purple);
+    font-size: 1.2rem;
+}
+
+.no-spectra-message {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.no-spectra-message p {
+    margin: 0;
+    color: #92400e;
+    font-weight: 500;
+}
+
+.metadata-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--border-color);
+}
+
+.metadata-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    color: var(--accent-purple);
+}
+
+/* Inventory page spectra link styling */
+.spectra-link {
+    margin-bottom: 2rem;
+}
+
+/* Status indicators for spectra metadata */
+.status-displayed {
+    color: #059669;
+    font-weight: 500;
+}
+
+.status-failed {
+    color: #dc2626;
+    font-weight: 500;
+}
+
+/* Spectra plot container - inherits from .visualization */
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header, main, footer {
+        padding: 1rem;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* Responsive table styling */
+    table {
+        font-size: 0.75rem;
+    }
+    
+    table th,
+    table td {
+        padding: 0.5rem;
+    }
+    
+    .form-group input[type="text"] {
+        max-width: 100%;
+    }
+}
+
