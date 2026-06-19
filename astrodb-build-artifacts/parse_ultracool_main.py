@@ -97,7 +97,7 @@ for col, dt in columns:
                  clean(unit) if unit else "—", dtype_str(dt)))
 
 # --- Step 5: output ---
-outdir = "ultracool_main-parsed-data-table"
+outdir = "astrodb-build-artifacts/ultracool_main-parsed-data-table"
 n = 0
 base_outdir = outdir
 while os.path.exists(outdir):

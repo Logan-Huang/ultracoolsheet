@@ -7,7 +7,7 @@ import sys
 
 sys.stdout.reconfigure(encoding="utf-8")
 
-PARSED_MD = "ultracool_main-parsed-data-table/ultracool_main-parsed-data-table.md"
+PARSED_MD = "astrodb-build-artifacts/ultracool_main-parsed-data-table/ultracool_main-parsed-data-table.md"
 
 # --- load parsed column info ---
 cols = {}  # name -> (desc, units, dtype)
